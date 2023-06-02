@@ -10,7 +10,7 @@ public class Order {
 
   public CustomerId CustomerId { get; private set; }
 
-  private readonly HashSet<LineItem> _lineItems = new();
+  private readonly HashSet<LineItem> LineItems = new();
 
   private Order(OrderId id, CustomerId customerId) {
     Id = id;
@@ -28,6 +28,6 @@ public class Order {
     
     var lineItem = LineItem.Create(Id, product.Id, product.Price);
 
-    _lineItems.Add(lineItem);
+    LineItems.Add(lineItem);
   }
 }
