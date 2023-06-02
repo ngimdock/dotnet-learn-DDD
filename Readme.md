@@ -10,4 +10,4 @@ In DDD and entity should be uniquly identifyable in our domain by a unique ident
 
 ### Value object
 
-Is and object that are defined by thier values. Value objects can also have some source validations
+Is and object that are defined by thier values. Value objects can also have some source validations and have to bi imutable
