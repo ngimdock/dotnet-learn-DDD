@@ -8,7 +8,7 @@ internal class LineItemConfiguration: IEntityTypeConfiguration<LineItem> {
     builder.HasKey(li => li.Id);
 
     builder.Property(li => li.Id).HasConversion(
-      customerId => customerId.Value,
+      lineItelId => lineItelId.Value,
       value => new LineItemId(value)
     );
 
